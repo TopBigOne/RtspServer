@@ -8,7 +8,7 @@ TOR_DIR 	= $(shell pwd)
 SRC_DIR 	= $(TOR_DIR)/src
 OBJS_PATH 	= $(TOR_DIR)/objs
 
-CXX_FLAGS 	= -O2 -g -I$(TOR_DIR)/src
+CXX_FLAGS 	= -O0 -g -I$(TOR_DIR)/src
 
 LD_FLAGS 	= -lpthread -lrt
 
@@ -49,7 +49,7 @@ TARGET_TEST_ADD_EVENT 	= $(TOR_DIR)/test/test_add_event
 TARGET_TEST_THREAD_POOL = $(TOR_DIR)/test/test_thread_pool
 TARGET_TEST_ACCEPTOR 	= $(TOR_DIR)/test/test_acceptor
 
-OBJ_EXAMPLE_H264_RTSP_SERVER				= $(OBJS_PATH)/01_h264_rtsp_server.o
+c				= $(OBJS_PATH)/01_h264_rtsp_server.o
 OBJ_EXAMPLE_AAC_RTSP_SERVER					= $(OBJS_PATH)/02_aac_rtsp_server.o
 OBJ_EXAMPLE_H264_AAC_RTSP_SERVER			= $(OBJS_PATH)/03_h264_aac_rtsp_server.o
 OBJ_EXAMPLE_V4L2_RTSP_SERVER				= $(OBJS_PATH)/04_v4l2_rtsp_server.o
@@ -134,7 +134,7 @@ $(OBJS_PATH)/%.o : $(SRC_DIR)/extend/v4l2/%.cpp
 
 
 
-
+# /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 .PHONY : clean
 clean:

@@ -11,7 +11,7 @@
 #include "extend/alsa/AlsaMediaSource.h"
 #include "net/AACRtpSink.h"
 
-int main(int argc, char* argv[])
+int main5(int argc, char* argv[])
 {
     if(argc !=  2)
     {

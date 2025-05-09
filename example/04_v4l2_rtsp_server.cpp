@@ -13,7 +13,7 @@
 #include "extend/v4l2/V4l2MediaSource.h"
 #include "net/H264RtpSink.h"
 
-int main(int argc, char* argv[])
+int main4(int argc, char* argv[])
 {
     if(argc !=  2)
     {
